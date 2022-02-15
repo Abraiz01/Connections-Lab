@@ -1,0 +1,26 @@
+#my_heading{
+	text-align: center;
+}
+
+#my_paragraph{
+	padding-left: 10px;
+}
+
+.my_images{
+	width: 40%;
+	padding: 10px;
+	flex: 1;
+
+}
+
+h3{
+	padding-left: 10px;
+}
+
+.flex-container{
+	display: flex;
+}
+
+.video_container{
+	text-align: center;
+}

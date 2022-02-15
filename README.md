@@ -1,5 +1,3 @@
 # Connections-Lab
 
-Repo for weekly homeworks and projects.
-
-- Abraiz
+Repo for weekly homeworks, documentations, and projects.

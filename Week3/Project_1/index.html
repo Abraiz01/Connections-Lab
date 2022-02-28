@@ -4,34 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mars Mission</title>
+    <title>Curiosity's Journey</title>
     <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
-    
-    <section class="project__container">
-        <div class="curiosity__info">
-            <h1 class="project__heading">Mars Curiosity Rover</h1>
-            <p class="landing__date" id="land-date"></p>
-            <p class="launch__date" id="launch-date"></p>
-            <p class="rover__status" id="rover-status"></p>
-            <p class="total__photos" id="total-photos"></p>
-        </div>
+    <!-- div for the progress bar -->
+    <div class="p-bar">
+        <img class="earth" id="prog-earth" src="./photos/earth.png">
+        <progress id="prog-bar" value="0" max="100"> 32% </progress>
+        <img class="mars" id="prog-mars" src="./photos/mars.png">
+    </div>
 
-        <h3 class="project__sub-heading">Enter a date between Curiosity's landing date and today (YYYY-MM-DD)</h3>
-        <div class="project__entry">
-            <input id="date-input"></input>
-            <button id="date-button">Go!</button>
-        </div>
-
-        <img class="image__1" id="img-1"/>
-
+    <section class="page" id="page-1">
+        <blockquote class="blockquote__1" id="title-1">A Trip to Mars with Curiosity<span></span></blockquote>
+        <img class="earth" id="earth-1" src="./photos/earth.png">
+        <button class="button button1" id = "button1" onclick="teleportToMars()">Teleport</button>
+        <button class="button button2" id = "button2" onclick="window.open('https://docs.google.com/document/d/1akf9JYemiadmf5Fm-Rhi2fc2gWSc6mYfSgWt2d3Pt0E/edit?usp=sharing');">About</button>
+        <blockquote id="blockquote-liftoff">Scroll Down to Lift Off<span></span></blockquote>
     </section>
 
-    <script src="app.js"></script>
+    <section class="page" id="page-2">
+        <!-- <h1>Second Page</h1> -->
+        <blockquote class="blockquote__1" id="blockquote-1">3, 2, 1, ... LIFTOFF! On Nov. 26, 2011 I left our planet in a spaceship called Atlas V<span></span></blockquote>
+        <blockquote class="blockquote__2" id="blockquote-2">Our journey is going to be a long one, so sit tight!<span></span></blockquote>
+        <img class="pic__1" id="launch-1" src="./photos/launch1.jpeg">
+        <img class="pic__2" id="launch-2" src="./photos/launch2.jpeg">
+        <img class="earth" id="earth-2" src="./photos/earth.png">
+        <img class="rocket" id="rocket-1" src="./photos/rocket.png">
+    </section>
 
+    <section class="page" id="page-3">
+        <!-- <h1>Third Page</h1> -->
+        <blockquote class="blockquote__1" id="blockquote-3">Atlas V can carry me at a maximum speed of 47,000 miles per hour. At this rate, it would take me just 5 minutes to circle the globe!<span></span></blockquote>
+        <blockquote class="blockquote__2" id="blockquote-4">But even at this speed, it will take me about 7 months to reach Mars!<span></span></blockquote>
+        <img class="pic__1" id="curiosity-1" src="./photos/curiosity.png">
+        <button class="button button4" id = "button4" onclick="window.open('model3d.html');" target="_blank">Click Here</button>
+        <blockquote class="blockquote__desc" id="blockquote-3d">To see me in 3d !<span></span></blockquote>
+        <img class="rocket" id="rocket-2" src="./photos/rocket-inv.png">
+    </section>
+
+    <section class="page" id="page-4">
+        <!-- <h1>Fourth Page</h1> -->
+        <blockquote class="blockquote__1" id="blockquote-5">I have now detached from the rocket in what's called a 'Cruise Ship'. This is the spaceship that will help me land on Mars.<span></span></blockquote>
+        <blockquote class="blockquote__2" id="blockquote-6">In the meantime, engineers back on Earth are making final adjustments to my landing path.<span></span></blockquote>
+        <img class="pic__1" id="cruise-pic1" src="./photos/cruise-2.jpeg">
+        <img class="pic__2" id="cruise-pic2" src="./photos/cruise-pic2.jpeg">
+        <img class="cruise" id="cruise-1" src="./photos/cruise.png">
+    </section>
+
+    <section class="page" id="page-5">
+        <!-- <h1>Fifth Page</h1> -->
+        <blockquote class="blockquote__1" id="blockquote-7"> On August 5th 2012, I landed safely on Mars, 186 million miles away from home!<span></span></blockquote>
+        <blockquote class="blockquote__2" id="blockquote-8">Now let's have a better look at what I discovered in Mars<span></span></blockquote>
+        <img class="pic__1" id="land-1" src="./photos/land-1.jpeg">
+        <img class="pic__2" id="land-2" src="./photos/pano.png">
+        <img class="mars" id="mars-1" src="./photos/mars.png">
+        <img class="cruise" id="cruise-2" src="./photos/cruise.png">
+    </section>
+
+    <section class="page" id="page-6">
+        <!-- <h1>Sixth Page</h1> -->
+        <div id="canvas-container"></div>
+        <img class="mars__bg" id="mars-bg" src="./photos/results.png">
+        <img class="curiosity__rover" id="curiosity" src="./photos/curiosity.png">
+        <button class="button button3" id = "button3" onclick="teleportToEarth()">Back to Earth</button>
+        <button class="button5" id = "button5" onclick="window.location.reload();">refresh</button>
+        <p id="instructions">Click and hold circles to find out what I discovered on Mars so far! Don't see the circles? Click on me and I'll help you out.</p>
+    </section>
+
+    <!-- libraries and modules -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="//use.edgefonts.net/changa-one.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    
 </body>
 </html>
-
-<!-- add weather too? -->

@@ -78,14 +78,6 @@ img {
     max-width: 100%;
 }
 
-.pic__1:hover {
-    filter: brightness(40%);
-}
-
-.pic__2:hover {
-    filter: brightness(40%);
-}
-
 .button {
     border: none;
     color: white;

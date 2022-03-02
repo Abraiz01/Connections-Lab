@@ -1,7 +1,7 @@
 {
 	"results": [{
 			"title": "Curiosity Finds Evidence of Persistent Liquid Water in the Past",
-			"img": "./photos/0.jpg",
+			"img": "./photos/0.png",
 			"date": "May 30, 2013",
 			"text": "Just after landing, Curiosity found smooth, rounded pebbles that likely rolled down a river that was ankle- to hip-deep. Near a mountain called Mount Sharp, Curiosity found over 1,000 feet of rock that were once mud at the bottom of a series of lakes. Scientists suspect that rivers and lakes persisted on Mars for perhaps a million years or longer.",
 			"img_text": "Did Mars have an Ancient River?"
@@ -9,7 +9,7 @@
 
 		{
 			"title": "A Suitable Home for Life",
-			"img": "./photos/1.jpg",
+			"img": "./photos/1.png",
 			"date": "March 12, 2013",
 			"text": "Curiosity found that ancient Mars had the right chemistry to support small living organisms. Curiosity found chemicals such as sulfur, nitrogen, oxygen, phosphorus and carbon-- key ingredients necessary for life. The sample also has clay and not too much salt, which suggests fresh, possibly drinkable water once flowed there.",
 			"img_text": "First Curiosity Drilling Sample in the Scoop"
@@ -17,7 +17,7 @@
 
 		{
 			"title": "Organic Carbon Found in Mars Rocks",
-			"img": "./photos/2.jpg",
+			"img": "./photos/2.png",
 			"date": "December 16, 2014",
 			"text": "Organic molecules are the building blocks of life, and they were discovered on Mars after Curiosity examined several samples it drilled from mountains and surrounding plains. This doesn't exactly mean that there was or is life on Mars, but it shows that the ingredients needed for life to get started were present there at one time.",
 			"img_text": "Curiosity Drills a Hole in Martian Soil"
@@ -25,7 +25,7 @@
 
 		{
 			"title": "Present and Active Methane in Mars' Atmosphere",
-			"img": "./photos/3.jpg",
+			"img": "./photos/3.png",
 			"date": "December 16, 2014",
 			"text": "Curiosity discovered increasing amounts of a chemical called 'methane' on Mars. The discovery of methane is exciting because methane can be produced by living organisms or by chemical reactions between rock and water. Which process is producing methane on Mars? What caused the sudden increase?",
 			"img_text": "Possible Methane Sources"
@@ -33,7 +33,7 @@
 
 		{
 			"title": "Radiation Could Pose Health Risks for Humans",
-			"img": "./photos/4.jpg",
+			"img": "./photos/4.png",
 			"date": "November 15, 2012",
 			"text": "During her trip to Mars, Curiosity found radiation levels that would not be safe for astronauts, if they are left unshielded. Curiosity found that two forms of radiation could be dangerous for astronauts in deep space: cosmic rays from explosions in space, and solar rays from the Sun. NASA will use Curiosity's data to design missions to be safe for human explorers in the future.",
 			"img_text": "Is Mars Ready for Humans?"
@@ -41,7 +41,7 @@
 
 		{
 			"title": "A Thicker Atmosphere and More Water in Mars' Past",
-			"img": "./photos/5.jpg",
+			"img": "./photos/5.png",
 			"date": "November 2, 2012",
 			"text": "Through her scientific instruments, Curiosity has found Mars' atmosphere to have large amounts of of hydrogen, carbon, and argon. These measurements show that Mars has lost much of its original atmosphere and inventory of water. This loss occurred to space through the top of the atmosphere.",
 			"img_text": "More Water in Mars' Past"

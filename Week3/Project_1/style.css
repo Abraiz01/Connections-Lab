@@ -1,3 +1,4 @@
+/* importing fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Raleway:300,400');
 
 body {
@@ -7,6 +8,41 @@ body {
   font-family: "Montserrat",Helvetica,Arial,sans-serif;;
   color: #FFF;
   background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjAwJyBoZWlnaHQ9JzYwMCcgdmlld0JveD0nMCAwIDE1MCAxNTAnPgo8ZmlsdGVyIGlkPSdpJyB4PScwJyB5PScwJz4KCTxmZUNvbG9yTWF0cml4IHR5cGU9J21hdHJpeCcgdmFsdWVzPScxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAwIDAnIC8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgYmFzZUZyZXF1ZW5jeT0nLjcnIHJlc3VsdD0nZnV6eicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJPGZlQ29tcG9zaXRlIGluPSdTb3VyY2VHcmFwaGljJyBpbjI9J2Z1enonIG9wZXJhdG9yPSdhcml0aG1ldGljJyBrMT0nMCcgazI9JzEnIGszPSctNzMnIGs0PScuMDEnIC8+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjMDMwMzFhJy8+CjxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjZmZmZmZmJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPHJlY3QgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyMwMzAzMWEnIGZpbHRlcj0ndXJsKCNpKScgb3BhY2l0eT0nMScvPgo8L3N2Zz4=');
+}
+
+.page {
+    padding: 2%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* styling the progress bar */
+#prog-bar{
+    height: 1vh;
+    width: 18vw;
+    position: fixed;
+    right: 4.5vw;
+    top: 3.5vh;
+    z-index: 1000;
+}
+
+/* progress bar's Earth */
+#prog-earth {
+    width: 2.5vw;
+    right: 23.5vw;
+    top: 2vh;   
+    position: fixed;
+    z-index: 1000;
+}
+
+/* progress bar's Mars */
+#prog-mars {
+    width: 2.5vw;
+    right: 1vw;
+    top: 2vh;   
+    position: fixed;
+    z-index: 1000;
 }
 
 .blockquote__1 {
@@ -29,34 +65,6 @@ body {
     top: 65vh;
 }
 
-#title-1{
-    font-size: 3vw;
-    top: 15vh;
-    left: 20vw;
-    width: 60vw;
-    text-align: center;
-    font-weight: 400;
-}
-
-#blockquote-3d {
-    color: rgb(255, 255, 255);
-    font-size: 1.5vw;    
-    right: 4.5vw;
-    position: absolute;
-    width: 18vw;
-    top: 80vh;
-    margin: 0;
-}
-
-#blockquote-liftoff {
-    color: rgb(255, 255, 255);
-    font-size: 1.5vw;    
-    right: 2.5vw;
-    position: absolute;
-    width: 20vw;
-    top: 80vh;
-}
-
 img {
     position: absolute;
     padding: 0;
@@ -66,20 +74,32 @@ img {
     max-width: 100%;
 }
 
-#launch-1 {
-    width: 25vw;
-    right: 1.5vw;
+.button {
+    border: none;
+    color: white;
+    padding: 1.5vh 1.5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    margin: 5vh 5vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 1.5vw;
+    position: absolute;
+}
+
+/* styling elements inside page-1 */
+
+#title-1{
+    font-size: 3vw;
     top: 15vh;
+    left: 20vw;
+    width: 60vw;
+    text-align: center;
+    font-weight: 400;
 }
-
-#launch-2 {
-    width: 25vw;
-    height: 28vh;
-    right: 1.5vw;
-    top: 55vh;
-}
-
-
 
 #earth-1 {
     width: 22vw;
@@ -103,32 +123,50 @@ img {
 
 /* Reference : https://www.geeksforgeeks.org/how-to-make-smooth-bounce-animation-using-css/ */
 
+#button1:hover{
+    background-color:#d36b16;
+}
+  
+.button1 {
+    left: 15vw;
+    top: 50vh;  
+    display: none;
+}
+
+.button2 {
+    right: 15vw;
+    top: 50vh;  
+    display: none;
+}
+
+#blockquote-liftoff {
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;    
+    right: 2.5vw;
+    position: absolute;
+    width: 20vw;
+    top: 80vh;
+}
+
+/* styling elements inside page-2 */
+
+#launch-1 {
+    width: 25vw;
+    right: 1.5vw;
+    top: 15vh;
+}
+
+#launch-2 {
+    width: 25vw;
+    height: 28vh;
+    right: 1.5vw;
+    top: 55vh;
+}
+
 #earth-2 {
     width: 25vw;
     right: 40vw;
     top: 40vh;   
-}
-
-#curiosity-1 {
-    width: 25vw;
-    right: 3vw;
-    top: 15vh;
-}
-
-#prog-earth {
-    width: 2.5vw;
-    right: 23.5vw;
-    top: 2vh;   
-    position: fixed;
-    z-index: 1000;
-}
-
-#prog-mars {
-    width: 2.5vw;
-    right: 1vw;
-    top: 2vh;   
-    position: fixed;
-    z-index: 1000;
 }
 
 #rocket-1 {
@@ -137,17 +175,36 @@ img {
     top: 0vh; 
 }
 
+/* styling elements inside page-3 */
+
+#curiosity-1 {
+    width: 25vw;
+    right: 3vw;
+    top: 15vh;
+}
+
+.button4 {
+    right: 8vw;
+    top: 65vh;  
+} 
+
+#blockquote-3d {
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;    
+    right: 4.5vw;
+    position: absolute;
+    width: 18vw;
+    top: 80vh;
+    margin: 0;
+}
+
 #rocket-2 {
     width: 25vw;
     right: 40vw;
     top: 40vh;
 }
 
-#cruise-1 {
-    width: 25vw;
-    right: 40vw;
-    top: 50vh;
-}
+/* styling elements inside page-4 */
 
 #cruise-pic1 {
     width: 30vw;
@@ -158,6 +215,28 @@ img {
 
 #cruise-pic2 {
     width: 30vw;
+    height: 30vh;
+    right: 2vw;
+    top: 55vh;
+}
+
+#cruise-1 {
+    width: 25vw;
+    right: 40vw;
+    top: 50vh;
+}
+
+/* styling elements inside page-5 */
+
+#land-1 {
+    width: 28vw;
+    height: 30vh;
+    right: 2vw;
+    top: 15vh;
+}
+
+#land-2 {
+    width: 28vw;
     height: 30vh;
     right: 2vw;
     top: 55vh;
@@ -175,26 +254,7 @@ img {
     top: 30vh;
 }
 
-#land-1 {
-    width: 28vw;
-    height: 30vh;
-    right: 2vw;
-    top: 15vh;
-}
-
-#land-2 {
-    width: 28vw;
-    height: 30vh;
-    right: 2vw;
-    top: 55vh;
-}
-
-.page {
-    padding: 2%;
-    height: 100vh;
-    position: relative;
-    box-sizing: border-box;
-}
+/* styling elements inside page-6 */
 
 #page-6 {
     padding: 0;
@@ -231,36 +291,6 @@ img {
 
 /* Reference : https://www.geeksforgeeks.org/how-to-make-smooth-bounce-animation-using-css/ */
 
-.button {
-    border: none;
-    color: white;
-    padding: 1.5vh 1.5vw;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1vw;
-    margin: 5vh 5vw;
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 1.5vw;
-    position: absolute;
-  }
-
-#button1:hover{
-    background-color:#d36b16;
-}
-  
-.button1 {
-    left: 15vw;
-    top: 50vh;  
-    display: none;
-}
-.button2 {
-    right: 15vw;
-    top: 50vh;  
-    display: none;
-} 
 
 .button:hover{
     background-color:#156991;
@@ -269,11 +299,6 @@ img {
 .button3 {
     right: 2vw;
     top: 15vh;  
-} 
-
-.button4 {
-    right: 8vw;
-    top: 65vh;  
 } 
 
 #button5 {
@@ -285,16 +310,6 @@ img {
     opacity: 0;
     cursor: pointer;
 } 
-
-
-#prog-bar{
-    height: 1vh;
-    width: 18vw;
-    position: fixed;
-    right: 4.5vw;
-    top: 3.5vh;
-    z-index: 1000;
-}
 
 #instructions {
     color: white;

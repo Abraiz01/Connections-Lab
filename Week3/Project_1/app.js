@@ -299,7 +299,7 @@ class Result {
       ellipse(this.x, this.y, 2*this.r);
     }
     
-    // function to display contents of circles when they are clicked
+    // function to display contents of circles when they are hovered over
     showResult(mx, my) {
       if(dist(mx, my, this.x, this.y) < this.r) {
         

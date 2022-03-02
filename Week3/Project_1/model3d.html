@@ -1,3 +1,5 @@
+<!-- html file for the webpage that contains the 3d Curiosity model -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +11,13 @@
 </head>
 
 <body>
+
+    <!-- iframe imported from NASA's website: https://solarsystem.nasa.gov/resources/2398/curiosity-3d-model/ -->
     <section class="page" id="page-7">
         <iframe src="https://mars.nasa.gov/gltf_embed/24584"  camera-controls width="100%" height="100%" frameborder="0"></iframe>
     </section>
 
+    <!-- module for the interactive 3d model -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </body>

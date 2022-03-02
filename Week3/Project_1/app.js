@@ -271,10 +271,8 @@ function draw() {
         results[i].drawStar();
       }
     }
-    if(mouseIsPressed) {
-      for(let i=0;i<results.length;i++) {
-        results[i].showTitle(mouseX, mouseY);
-      }
+    for(let i=0;i<results.length;i++) {
+      results[i].showResult(mouseX, mouseY);
     }
 }
 
@@ -295,13 +293,14 @@ class Result {
       this.x = random(0.35*sketchWidth,0.9*sketchWidth);
       this.y = random(0.55*sketchHeight,0.95*sketchHeight);
       this.r = 10;
+      this.clicked = false;
     }
     drawStar() {
       ellipse(this.x, this.y, 2*this.r);
     }
     
     // function to display contents of circles when they are clicked
-    showTitle(mx, my) {
+    showResult(mx, my) {
       if(dist(mx, my, this.x, this.y) < this.r) {
         
         image(this.img, 0.04*sketchWidth, 0.03*sketchHeight, 0.25*sketchWidth, 0.35*sketchHeight);
@@ -319,3 +318,4 @@ class Result {
     }
   
   }
+

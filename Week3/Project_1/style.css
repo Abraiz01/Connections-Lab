@@ -29,6 +29,7 @@ body {
 
 /* progress bar's Earth */
 #prog-earth {
+    border: none;
     width: 2.5vw;
     right: 23.5vw;
     top: 2vh;   
@@ -38,6 +39,7 @@ body {
 
 /* progress bar's Mars */
 #prog-mars {
+    border: none;
     width: 2.5vw;
     right: 1vw;
     top: 2vh;   
@@ -66,6 +68,8 @@ body {
 }
 
 img {
+    border-radius: 1.5vw;
+    border: 0.15vw solid #ffffff;
     position: absolute;
     padding: 0;
     display: block;
@@ -102,6 +106,7 @@ img {
 }
 
 #earth-1 {
+    border: none;
     width: 22vw;
     right: 39vw;
     top: 30vh; 
@@ -164,12 +169,14 @@ img {
 }
 
 #earth-2 {
+    border: none;
     width: 25vw;
     right: 40vw;
     top: 40vh;   
 }
 
 #rocket-1 {
+    border: none;
     width: 12vw;
     right: 46vw;
     top: 0vh; 
@@ -178,6 +185,7 @@ img {
 /* styling elements inside page-3 */
 
 #curiosity-1 {
+    border: none;
     width: 25vw;
     right: 3vw;
     top: 15vh;
@@ -199,6 +207,7 @@ img {
 }
 
 #rocket-2 {
+    border: none;
     width: 25vw;
     right: 40vw;
     top: 40vh;
@@ -221,6 +230,7 @@ img {
 }
 
 #cruise-1 {
+    border: none;
     width: 25vw;
     right: 40vw;
     top: 50vh;
@@ -243,12 +253,14 @@ img {
 }
 
 #mars-1 {
+    border: none;
     width: 28vw;
     right: 36vw;
     top: 40vh;   
 }
 
 #cruise-2 {
+    border: none;
     width: 15vw;
     right: 43vw;
     top: 30vh;
@@ -262,6 +274,7 @@ img {
 }
 
 #mars-bg {
+    border: none;
     width: 100vw;
     height: 60vh;
     top: 40vh;
@@ -269,6 +282,7 @@ img {
 }
 
 #curiosity {
+    border: none;
     width: 25vw;
     top: 53vh;
     right: 70vw;

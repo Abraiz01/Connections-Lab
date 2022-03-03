@@ -292,14 +292,14 @@ class Result {
       this.text = text;
       this.x = random(0.35*sketchWidth,0.9*sketchWidth);
       this.y = random(0.55*sketchHeight,0.95*sketchHeight);
-      this.r = 10;
+      this.r = 0.007*sketchWidth;
       this.clicked = false;
     }
     drawStar() {
       ellipse(this.x, this.y, 2*this.r);
     }
     
-    // function to display contents of circles when they are hovered over
+    // function to display contents of circles when they are clicked
     showResult(mx, my) {
       if(dist(mx, my, this.x, this.y) < this.r) {
         

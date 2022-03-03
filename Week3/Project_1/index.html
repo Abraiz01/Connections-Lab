@@ -82,7 +82,13 @@
         <!-- opaque button behind Curiosity to reload the page -->
         <button class="button5" id = "button5" onclick="window.location.reload();">refresh</button>
         <button class="button button6" id = "button6">What's This?</button>
-        <p class="hidden" id="instructions">Hover over the circles to find out what I discovered on Mars so far! Don't see the circles? Click on me and I'll help you out.</p>
+
+        <!-- creating a hidden div containing instructions and a '?' symbol, will be displayed when pointer is hovered over button6 -->
+        <div class="hidden">
+        <p id="question">?</p>
+        <p id="instructions">Hover over the circles to find out what I've discovered on Mars so far! Don't see the circles? Click on me and I'll help you out.</p>
+        </div>
+        
     </section>
 
     <!-- libraries and modules -->

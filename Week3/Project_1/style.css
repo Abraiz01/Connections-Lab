@@ -78,6 +78,14 @@ img {
     max-width: 100%;
 }
 
+/* .pic__1:hover {
+    filter: brightness(40%);
+}
+
+.pic__2:hover {
+    filter: brightness(40%);
+} */
+
 .button {
     border: none;
     color: white;
@@ -89,7 +97,7 @@ img {
     margin: 5vh 5vw;
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid white;
+    border: 0.15vw solid white;
     border-radius: 1.5vw;
     position: absolute;
 }
@@ -155,6 +163,10 @@ img {
 
 /* styling elements inside page-2 */
 
+#blockquote-2 {
+    width: 26vw;
+}
+
 #launch-1 {
     width: 25vw;
     right: 1.5vw;
@@ -165,7 +177,7 @@ img {
     width: 25vw;
     height: 28vh;
     right: 1.5vw;
-    top: 55vh;
+    top: 60vh;
 }
 
 #earth-2 {
@@ -311,8 +323,8 @@ img {
 }
 
 .button3 {
-    right: 2vw;
-    top: 15vh;  
+    right: 4vw;
+    top: 25vh;  
 } 
 
 #button5 {
@@ -323,18 +335,28 @@ img {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-} 
+}
 
 #instructions {
     color: white;
     font-size: 1.5vw;    
-    left: 4vw;
-    top: 85vh;
+    left: 20vw;
+    top: 15vh;
     position: absolute;
     text-align: center;
     width: 28vw;
     margin: 0;
+    display: none;
 }
+
+#button6:hover + .hidden {
+    display: block;
+  }
+
+#button6 {
+    right: 4vw;
+    top: 10vh;  
+} 
 
 #canvas-container {
     width: 98vw;

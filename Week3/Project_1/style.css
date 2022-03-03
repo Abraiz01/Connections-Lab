@@ -78,6 +78,14 @@ img {
     max-width: 100%;
 }
 
+/* .pic__1:hover {
+    filter: brightness(40%);
+}
+
+.pic__2:hover {
+    filter: brightness(40%);
+} */
+
 .button {
     border: none;
     color: white;
@@ -329,6 +337,11 @@ img {
     cursor: pointer;
 }
 
+/* hiding instruction and '?' symbol */
+.hidden {
+    display: none;
+}
+
 #instructions {
     color: white;
     font-size: 1.5vw;    
@@ -338,17 +351,29 @@ img {
     text-align: center;
     width: 28vw;
     margin: 0;
-    display: none;
 }
 
+#question {
+    color: white;
+    font-size: 5vw;
+    font-weight: 400;  
+    left: 3.5vw;
+    top: 15vh;
+    position: absolute;
+    text-align: center;
+    width: 28vw;
+    margin: 0;
+}
+
+/* displaying instrucctions and '?' symbol when pointer is hovered over button6 */
 #button6:hover + .hidden {
     display: block;
-  }
+}
 
 #button6 {
     right: 4vw;
-    top: 10vh;  
-} 
+    top: 10vh; 
+}
 
 #canvas-container {
     width: 98vw;

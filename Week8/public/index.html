@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <title>Faiza</title>
+</head>
+<body>
+    <h1>Faiza the Falcon</h1>
+    <h3>In Random Places</h3>
+    <div class="container">
+        <!-- Enter chat messages here -->
+        <div class="sub-container chat-input">
+            <input type="text" class="chat-input-msg" id="msg-input" placeholder="What's on Faiza's mind?" />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button button1" id = "hat-button">Hat</button>
+        <button class="button button2" id = "collar-button">Collar</button>
+        <!-- <button class="button button3" id = "shoe-button">Shoes</button> -->
+        <button class="button button4" id = "bg-button">Background</button>
+    </div>
+
+    <div class="container-2">
+        <!-- View chat messages here here -->
+        <div class="sub-container chat-feed">
+            <div class="chat-box" id="chat-box-msgs"></div>
+        </div>
+    </div>
+
+    <div class="img-container">
+        <div class="faiza-container">
+            <img id="faiza" src="./photos/faiza.png">
+            <img class="hat" id="hat-1" src="./photos/hat1.png">
+            <img class="hat" id="hat-2" src="./photos/hat2.png">
+            <img class="hat" id="hat-3" src="./photos/hat3.png">
+            <img class="collar" id="collar-1" src="./photos/collar1.png">
+            <img class="collar" id="collar-2" src="./photos/collar2.png">
+            <img class="collar" id="collar-3" src="./photos/collar3.png">
+            <!-- <img class="shoe" id="shoe-1" src="./photos/shoe1.jpg"> 
+            <img class="shoe" id="shoe-2" src="./photos/shoe2.png">
+            <img class="shoe" id="shoe-3" src="./photos/shoe3.jpeg"> -->
+        </div>
+        <img class="bg" id="bg-1" src="./photos/bg1.jpg">
+        <img class="bg" id="bg-2" src="./photos/bg2.jpg">
+        <img class="bg" id="bg-3" src="./photos/bg3.jpg">
+    </div>
+    <script type="text/javascript" src="other.js"></script>
+</body>
+</html>

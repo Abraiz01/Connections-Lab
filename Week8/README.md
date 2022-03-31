@@ -1,5 +1,5 @@
 # Connections-Week8
-Homework for Week#8 using Node, Express, and scoket.io
+Homework for Week#8 using Node, Express, and socket.io
 
 Glitch link: https://better-iridescent-thunbergia.glitch.me
 

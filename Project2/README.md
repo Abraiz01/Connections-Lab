@@ -7,6 +7,14 @@ Glitch link: https://quaint-delirious-mockingbird.glitch.me
 
 “Chase”, an online multiplayer game, is really the first project in which I implemented both front-end (HTML CSS and JavaScript), and back-end web development using Node, Express, and socket io. The idea of the game is simple: collect ten “feathers” as soon as possible without running out of lives. The game ends when either a player runs out of lives, or a player collects ten feathers and wins. The character “Faiza the Falcon”, NYUAD’s very own mascot, is controlled by the player using the arrow keys, while an enemy (that resembles a scary bat) follows Faiza at all times. Each player has their own enemy bat that always follows them and in case the bat manages to collide with the player, they lose one life. Each player has a total of three lives to play with. 
 
+<p align="center">
+  <img 
+    width="300"
+    height="200"
+    src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/screenshot.png"
+  >
+</p>
+
 ## Inspiration:
 
 When I was thinking about what to make for my project, at first I only had the rules of the game in my mind. I originally wanted to implement a simpler version of this game in a smaller, weekly homework assignment but when I started to go about making it, I realized it was a bit more complicated than I thought it would be, so I decided to work on it for my midterm project instead. 

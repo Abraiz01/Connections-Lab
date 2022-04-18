@@ -21,19 +21,15 @@ The following is the ordered workflow of the socket.io implementation for the pl
 
 _Player1 (player the user is controlling):_
 
-
-
 1. Player moves their character (purple bird) using arrow keys, the x and y positions change accordingly
 2. Player emits their position info to the server.
 3. Socket.on in server
 4. Server emits back to just the other player in their room (not back to the player themselves)
 5. Socket.on for the other player, the position information is used to update the position of the player2 object (brown bird) accordingly.
 
-Feather count, lives and other information is sent and received in a similar fashion and the above is a general idea on how the workflow goes about.
+Feather count, lives and other information is sent and received in a similar fashion and the above is a general idea on how the workflow goes about. Other attributs like `clientCount` were emitted to all users in the room from the server. `clientCount` was used to identify if two players had joined the game room in order to start the game:
 
 _Client count to Start the Game:_
-
-
 
 1. Player connects to the game room
 2. Client side emits a message to server 
@@ -43,7 +39,7 @@ _Client count to Start the Game:_
 
 ## Features:
 
-Below are the features that my game currently has. For more features that I plan to implement, refer to the “next Steps / Ideas section).
+Below are the features that my game currently has. For more features that I plan to implement, refer to the “Next Steps / Ideas section).
 
 
 

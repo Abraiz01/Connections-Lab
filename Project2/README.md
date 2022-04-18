@@ -96,9 +96,9 @@ The following are some of the challenges that I faced while making the game. Bug
 * Used the Piskel app to make a bunch of illustrations (all of which are contained inside the 'images' subfolder in the 'public' folder). It did take a bit of time but I got exactly what I wanted in the right dimensions as well.
 
 
-Pattern       |  Player 2    
-:-------------------------:|:-------------------------:
-![Pattern](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/main-bg.png)  |  ![Player 2](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/faiza2-big.png)
+Main Pattern       |  Player 2    |   Game Pattern
+:-------------------------:|:-------------------------:|:-------------------------:
+![Pattern](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/main-bg.png)  |  ![Player 2](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/faiza2-big.png) |  ![Game](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/game-bg.png)
 
 
 * The refresh and back buttons caused some bugs in the game, so I decided to implement my own buttons “Quit” and “Play Again” in order to avoid those bugs. The application could later be developed into a non-browser one so that back and refresh aren’t used.

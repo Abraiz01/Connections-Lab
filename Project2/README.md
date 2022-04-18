@@ -77,7 +77,17 @@ The following are some of the challenges that I faced while making the game. Bug
 * I learnt that in order to only emit to a specific room I had to use `socket.to(room)` instead of `socket.broadcast.emit`, since the latter would emit to all other players another game rooms as well.
 * Would learn and make use of the Bootstrap library next time in order to ease the process of designing  the webpage and to save time.
 * Repositioning the p5 canvas on the webpage was not very simple. At first I tried to embed the canvas inside a container and then reposition it, but that did not work. So I had to revert to using p5’s own positioning system where I have to specify the `x` and `y` values in pixels which would position the top-left corner of the canvas accordingly.
-* Emitting / receiving requests inside the draw function made the game lag quite a bit after a very short time. This would make the game unplayable after about a minute or so. To avoid this, I had to make use of `display()` functions for each of the classes and define conditions whenever I wanted to emit to the server or receive something from it, so that data is only emitted / received to and from the server when it has to be, instead of calling emit and on directly inside the draw function.
+* Emitting / receiving requests inside the draw function made the game lag quite a bit after a very short time. This would make the game unplayable after about a minute or so. To avoid this, I had to make use of `display()` functions for each of the classes and define conditions whenever I wanted to emit to the server or receive something from it, so that data is only emitted / received to and from the server when it has to be, instead of calling emit and on directly inside the draw function. For example, the following was used inside the draw function to emit the feather position of a new feather everytime it was created:
+```js
+   if (frameCount % 300 == 0) {
+       for (let i=0; i<this.featherList.length; i++) {
+           this.featherList = this.arrayRemove(this.featherList, this.featherList[i]);
+       }
+       newFeather = new Feather(this.randomInt(20, 780), this.randomInt(20,780), 20, 40, 40, 1, false);
+       this.featherList.push(newFeather);
+       socket.emit('featherPosition', newFeather.featherPosition);
+   }
+```
 * When a user tried to join a full room, he wasn’t added to the room count but his name was added to the users list. - I solved this by deleting the user from the list when max players were reached.
 * The refresh and back buttons caused some bugs in the game, so I decided to implement my own buttons “Quit” and “Play Again” in order to avoid those bugs. The application could later be developed into a non-browser one so that back and refresh aren’t used.
 * I had to work in pixels for designing the game room. Since p5 works in pixels, I could not resize the canvas when the window width or height is changed otherwise the p5 dimensions would get all mixed up. So I decided to make the p5 game window a fixed dimension of `(1024, 700)` and fixed the canvas along with all other elements in the game room so that they would not move in case the window was resized. The game was meant to be a desktop application anyway with a fixed game screen window.
@@ -87,8 +97,8 @@ The following are some of the challenges that I faced while making the game. Bug
 ```
 * P5 makes it a bit difficult to load images inside classes, so I had to `preload()` images into variables outside the classes and feed them into the attributes of the respective objects in order to load them. 
 ```js
-function preload() {
-  playerImg = loadImage('/images/faiza.png');
+   function preload() {
+     playerImg = loadImage('/images/faiza.png');
 }
 ```
 * Implementing two players was probably the trickiest part for me, since I decided to make one Player class and implement both players from it. I made two separate objects for both players from the `Player` class: `player` and `player2`. `player` was always used to represent the current player controlling their own character on their screen while `player2` was used to replicate the movements of the other player. The way this worked was that whenever `player` emitted something to the other player in the room, like their position, lives, feathers collected etc, the other player on their end mapped that information to the `player2` object. However, using a single `Player` class in this way to implement both players made everything much simpler and smoother at the end since I did not have to worry about making a separate `Player2` class and updating its object separately everytime.

@@ -94,6 +94,7 @@ The following are some of the challenges that I faced while making the game. Bug
 ```
 * When a user tried to join a full room, he wasn’t added to the room count but his name was added to the users list. I solved this by deleting the user from the list when max players were reached.
 * Used the Piskel app to make a bunch of illustrations (all of which are contained inside the 'images' subfolder in the 'public' folder). It did take a bit of time but I got exactly what I wanted in the right dimensions as well.
+
 <p align="center">
   <img 
     width="200"
@@ -101,6 +102,7 @@ The following are some of the challenges that I faced while making the game. Bug
     src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/faiza2-big.png"
   >
 </p>
+
 * The refresh and back buttons caused some bugs in the game, so I decided to implement my own buttons “Quit” and “Play Again” in order to avoid those bugs. The application could later be developed into a non-browser one so that back and refresh aren’t used.
 * I had to work in pixels for designing the game room. Since p5 works in pixels, I could not resize the canvas when the window width or height is changed otherwise the p5 dimensions would get all mixed up. So I decided to make the p5 game window a fixed dimension of `(1024, 700)` and fixed the canvas along with all other elements in the game room so that they would not move in case the window was resized. The game was meant to be a desktop application anyway with a fixed game screen window.
 ```js

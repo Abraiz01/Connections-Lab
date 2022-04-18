@@ -1,7 +1,7 @@
 # Connections-Project2
 Project-2 using Node, Express, and socket.io
 
-Glitch link: 
+Glitch link: https://quaint-delirious-mockingbird.glitch.me
 
 ## Description:
 

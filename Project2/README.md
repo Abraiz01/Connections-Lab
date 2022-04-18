@@ -122,11 +122,9 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 
 ## References:
 
-
-
-* [https://www.fontspace.com/category/minecraft](https://www.fontspace.com/category/minecraft)
-* [https://p5js.org/reference/](https://p5js.org/reference/)
-* [https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript](https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript)
-* [https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/](https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/)
-* [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)
-* [https://www.w3schools.com/css/css_align.asp](https://www.w3schools.com/css/css_align.asp)
+* Minecraft font: [https://www.fontspace.com/category/minecraft](https://www.fontspace.com/category/minecraft)
+* P5 Reference: [https://p5js.org/reference/](https://p5js.org/reference/)
+* Random Number JavaScript: [https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript](https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript)
+* Remove Elements from Array GeeksForGeeks: [https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/](https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/)
+* MDN Flexbox: [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)
+* W3 Schools for CSS: [https://www.w3schools.com/css/](https://www.w3schools.com/css/css_align.asp)

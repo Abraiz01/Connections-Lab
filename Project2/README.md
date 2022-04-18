@@ -89,7 +89,7 @@ The following are some of the challenges that I faced while making the game. Bug
    }
 ```
 * When a user tried to join a full room, he wasn’t added to the room count but his name was added to the users list. - I solved this by deleting the user from the list when max players were reached.
-* Used the Piskel app to make a bunch of illustrations (all are contained inside the images subfolder in the public folder. It did take a bit of time but I got exactly what I wanted in the right dimensions as well.
+* Used the Piskel app to make a bunch of illustrations (all are contained inside the images subfolder in the public folder). It did take a bit of time but I got exactly what I wanted in the right dimensions as well.
 * The refresh and back buttons caused some bugs in the game, so I decided to implement my own buttons “Quit” and “Play Again” in order to avoid those bugs. The application could later be developed into a non-browser one so that back and refresh aren’t used.
 * I had to work in pixels for designing the game room. Since p5 works in pixels, I could not resize the canvas when the window width or height is changed otherwise the p5 dimensions would get all mixed up. So I decided to make the p5 game window a fixed dimension of `(1024, 700)` and fixed the canvas along with all other elements in the game room so that they would not move in case the window was resized. The game was meant to be a desktop application anyway with a fixed game screen window.
 ```js
@@ -124,7 +124,7 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 ## References:
 
 * Minecraft font: [https://www.fontspace.com/category/minecraft](https://www.fontspace.com/category/minecraft)
-* * Piskel App - for drawing pixelated images: [https://www.piskelapp.com/](https://www.piskelapp.com/)
+* Piskel App - for drawing pixelated images: [https://www.piskelapp.com/](https://www.piskelapp.com/)
 * P5 Reference: [https://p5js.org/reference/](https://p5js.org/reference/)
 * Random Number JavaScript: [https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript](https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript)
 * Remove Elements from Array GeeksForGeeks: [https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/](https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/)

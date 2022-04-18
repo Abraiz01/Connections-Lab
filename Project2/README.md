@@ -39,7 +39,7 @@ _Client count to Start the Game:_
 
 ## Features:
 
-Below are the features that my game currently has. For more features that I plan to implement, refer to the “Next Steps / Ideas section).
+Below are the features that my game currently has. For more features that I plan to implement, refer to the [Next Steps / Ideas](#Next-Steps-/-Ideas) section.
 
 
 

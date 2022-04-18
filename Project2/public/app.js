@@ -439,7 +439,7 @@ class Game {
         this.ready = false;
         this.playerLeft = false;
         this.gameOver = false;
-        this.winFeathers = 1;
+        this.winFeathers = 10;
         this.player = new Player(300, 300, 20, 66, 66, 9, 300, 300, false);
         this.player.username = sessionStorage.getItem('name');
         this.player2 = new Player(300, 300, 20, 66, 66, 9, 300, 300, true); 

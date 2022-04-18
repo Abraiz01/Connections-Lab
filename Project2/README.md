@@ -140,6 +140,14 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 * Add the ability to “spectate” a particular game in a room.
 * For more ideas on how I plan to make the game into more of an open world experience, and the new features the application would have in that case, please refer to the [Inspiration](#Inspiration) section of the documentation.
 
+<p align="center">
+  <img 
+    width="200"
+    height="200"
+    src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/big-feather1.png"
+  >
+</p>
+
 ## References:
 
 * Minecraft font: [https://www.fontspace.com/category/minecraft](https://www.fontspace.com/category/minecraft)

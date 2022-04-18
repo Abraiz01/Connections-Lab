@@ -110,12 +110,12 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 * Since my game consisted of “pixelated” characters, I thought what better font would I find than Minecraft’s very own pixelated font for my game.
 * Could also go on to make the game a bit more challenging by adding the rule that each player would have to avoid **<span style="text-decoration:underline;">both</span>** enemies instead of just their own. The rest of the rules would remain the same.
 * I wish to add a chatting feature on the side of the game room so that players can communicate with each other as they play through games. 
-* Would maybe look into adding usernames to the bottom of each player’s character. This Would become more relevant when I decide to implement the ‘Lobby’ idea as mentioned in the “Inspiration” section.
+* Would maybe look into adding usernames to the bottom of each player’s character. This Would become more relevant when I decide to implement the ‘Lobby’ idea as mentioned in the [Inspiration](#Inspiration) section.
 * Could also implement different levels, or make a separate game in which players would have to collaborate in order to progress through the levels (as mentioned in the first point in the “Peer Feedback” section). The game would become more difficult as the players progressed.
 * Could also add a parallax background to the game, so that whenever the player’s character moved, the background would move along with them as well. This would only happen for the player’s own character on their respective screens, instead of both characters on the same screen.
 * I believe it would be helpful if I added a small time break when both players join the game and then start the game so that they have some time to get ready as the game starts.
 * Add the ability to “spectate” a particular game in a room.
-* For more ideas on how I plan to make the game into more of an open world experience, and the new features that application would have in that case, please refer to the “Inspiration” section of the documentation.
+* For more ideas on how I plan to make the game into more of an open world experience, and the new features that application would have in that case, please refer to the [Inspiration](#Inspiration) section of the documentation.
 
 ## References:
 

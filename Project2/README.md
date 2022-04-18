@@ -15,7 +15,7 @@ Since we had to implement rooms / namespaces in socket.io for our project, I tho
 
 All of these ideas seemed very good, but given the time constraints that I had for my project and given that it was my first time using socket.io on an extensive level, I decided to implement only the game Chase for now, where players would join a ‘game room’ and play against each other. However, I plan on implementing the above features and transforming the application into an open-world experience, where players could do much more than only play the game “Chase”.
 
-<p align="left">
+<p align="center">
   <img 
     width="300"
     height="300"

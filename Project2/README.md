@@ -142,8 +142,8 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 
 <p align="center">
   <img 
-    width="200"
-    height="200"
+    width="100"
+    height="100"
     src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/big-feather1.png"
   >
 </p>

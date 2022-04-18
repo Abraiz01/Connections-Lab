@@ -1,8 +1,13 @@
-Description:
+# Connections-Project2
+Project-2 using Node, Express, and socket.io
+
+Glitch link: 
+
+## Description:
 
 “Chase”, an online multiplayer game, is really the first project in which I implemented both front-end (HTML CSS and JavaScript), and back-end web development using Node, Express, and socket io. The idea of the game is simple: collect ten “feathers” as soon as possible without running out of lives. The game ends when either a player runs out of lives, or a player collects ten feathers and wins. The character “Faiza the Falcon”, NYUAD’s very own mascot, is controlled by the player using the arrow keys, while an enemy (that resembles a scary bat) follows Faiza at all times. Each player has their own enemy bat that always follows them and in case the bat manages to collide with the player, they lose one life. Each player has a total of three lives to play with. 
 
-Inspiration:
+## Inspiration:
 
 When I was thinking about what to make for my project, at first I only had the rules of the game in my mind. I originally wanted to implement a simpler version of this game in a smaller, weekly homework assignment but when I started to go about making it, I realized it was a bit more complicated than I thought it would be, so I decided to work on it for my midterm project instead. 
 
@@ -10,7 +15,7 @@ Since we had to implement rooms / namespaces in socket.io for our project, I tho
 
 All of these ideas seemed very good, but given the time constraints that I had for my project and given that it was my first time using socket.io on an extensive level, I decided to implement only the game Chase for now, where players would join a ‘game room’ and play against each other. However, I plan on implementing the above features and making the application into an open-world experience, where players could do much more than only play the game “Chase”.
 
-Workflow:
+## Workflow:
 
 The following is the ordered workflow of the socket.io implementation for the players:
 
@@ -36,7 +41,7 @@ _Client count to Start the Game:_
 4. Server emits the number of players in the room to all players in the game room using io.in(roomName).emit.
 5. Socket.on for all users, if there is one player, they wait, if there are two, the game begins.
 
-Features:
+## Features:
 
 Below are the features that my game currently has. For more features that I plan to implement, refer to the “next Steps / Ideas section).
 
@@ -52,7 +57,7 @@ Below are the features that my game currently has. For more features that I plan
 * Implementing a ‘Quit’ button which would return the player to the game’s home screen. A message saying “Player 2 has left the game” is displayed on the other player’s screen in real-time as soon as the other player leaves.
 * Implementing a “Play Again” button to restart the game once **<span style="text-decoration:underline;">both players</span>** have clicked on their respective “Play Again” buttons. When one player presses the button, a message is displayed to the other player saying that their partner is ready to play again and waiting for you to press the Play Again button. The game is restarted once both players have pressed their respective buttons.
 
-Peer Feedback:
+## Peer Feedback:
 
 User testing can never be underestimated! I got a lot of valuable feedback from my peers that I incorporated into my application:
 
@@ -79,7 +84,7 @@ The following are some of the challenges that I faced while making the game. Bug
 * P5 makes it a bit difficult to load images inside classes, so I had to preload images into variables outside the classes and feed them into the attributes of the respective objects in order to load them. 
 * Implementing two players was probably the trickiest part for me, since I decided to make one Player class and implement both players from it. I made two separate objects for both players from the Player class: ‘player’ and ‘player2’. Player was always used to represent the current player controlling their own character on their screen while player2 was used to replicate the movements of the other player. The way this worked was that whenever ‘player’ emitted something to the other player in the room, like their position, lives, feathers collected etc, the other player on their end mapped that information to the player2 object. However, using a single Player class in this way to implement both players made everything much simpler and smoother at the end since I did not have to worry about making a separate Player2 class and updating its object separately everytime.
 
-Next Steps / More Ideas:
+## Next Steps / More Ideas:
 
 I had a lot of fun ideas while I was in the development stage of my game, and I decided to document them as I progressed through making the game so that I wouldn’t lose them. I have listed them below:
 
@@ -96,7 +101,7 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 * Add the ability to “spectate” a particular game in a room.
 * For more ideas on how I plan to make the game into more of an open world experience, and the new features that application would have in that case, please refer to the “Inspiration” section of the documentation.
 
-References:
+## References:
 
 
 

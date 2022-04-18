@@ -5,7 +5,8 @@ Glitch link: https://quaint-delirious-mockingbird.glitch.me
 
 ## Description:
 
-“Chase”, an online multiplayer game, is really the first project in which I implemented both front-end (HTML CSS and JavaScript), and back-end web development using Node, Express, and socket io. The idea of the game is simple: collect ten “feathers” as soon as possible without running out of lives. The game ends when either a player runs out of lives, or a player collects ten feathers and wins. The character “Faiza the Falcon”, NYUAD’s very own mascot, is controlled by the player using the arrow keys, while an enemy (that resembles a scary bat) follows Faiza at all times. Each player has their own enemy bat that always follows them and in case the bat manages to collide with the player, they lose one life. Each player has a total of three lives to play with. 
+“Chase”, an online multiplayer game, is really the first project in which I implemented both front-end (HTML CSS and JavaScript), and back-end web development using Node, Express, and socket io. The idea of the game is simple: collect ten “feathers” as soon as possible without running out of lives. The game ends when either a player runs out of lives, or a player collects ten feathers and wins. The character “Faiza the Falcon”, NYUAD’s very own mascot, is controlled by the player using the arrow keys, while an enemy (that resembles a scary bat) follows Faiza at all times. Each player has their own enemy bat that always follows them and in case the bat manages to collide with the player, they lose one life. Each player has a total of three lives to play with. <br/><br/>
+
 
 <p align="center">
   <img 
@@ -21,7 +22,7 @@ When I was thinking about what to make for my project, at first I only had the r
 
 Since we had to implement rooms / namespaces in socket.io for our project, I thought about making an open world game in which each player would have their own bird which they would control. First, the players would enter a lobby which would look like a treehouse. There, they would meet other members of their party, each with their own unique bird with the username displayed at the bottom. Players would be able to chat with their lobby members. The lobby would support a maximum of 5 people at a time. From the lobby, the players could enter a ‘game room’ where they would play the “Chase” game. Only 2 people would be able to play at a time, so the rest could join in as spectators and switch once a game finished. Or, I even thought about implementing a tournament of 5 people who would play Chase against each other and the leaderboard would be displayed in the treehouse lobby. Moreover, players could play / change the lobby’s music, they could have their own little “pet” character which would follow them wherever they went (using the same ‘following’ attribute of the enemy character in Chase). They could customize their bird character, pet, or even the treehouse. 
 
-All of these ideas seemed very good, but given the time constraints that I had for my project and given that it was my first time using socket.io on an extensive level, I decided to implement only the game Chase for now, where players would join a ‘game room’ and play against each other. However, I plan on implementing the above features and transforming the application into an open-world experience, where players could do much more than only play the game “Chase”.
+All of these ideas seemed very good, but given the time constraints that I had for my project and given that it was my first time using socket.io on an extensive level, I decided to implement only the game Chase for now, where players would join a ‘game room’ and play against each other. However, I plan on implementing the above features and transforming the application into an open-world experience, where players could do much more than only play the game “Chase”.<br/><br/>
 
 <p align="center">
   <img 
@@ -101,13 +102,14 @@ The following are some of the challenges that I faced while making the game. Bug
    }
 ```
 * When a user tried to join a full room, he wasn’t added to the room count but his name was added to the users list. I solved this by deleting the user from the list when max players were reached.
-* Used the Piskel app to make a bunch of illustrations (all of which are contained inside the 'images' subfolder in the 'public' folder). It did take a bit of time but I got exactly what I wanted in the right dimensions as well.
+* Used the Piskel app to make a bunch of illustrations (all of which are contained inside the 'images' subfolder in the 'public' folder). It did take a bit of time but I got exactly what I wanted in the right dimensions as well.<br/><br/>
 
 
 Main Pattern       |  Player 2    |   Game Pattern
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Pattern](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/main-bg.png)  |  ![Player 2](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/faiza2-big.png) |  ![Game](https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/game-bg.png)
 
+<br/>
 
 * The refresh and back buttons caused some bugs in the game, so I decided to implement my own buttons “Quit” and “Play Again” in order to avoid those bugs. The application could later be developed into a non-browser one so that back and refresh aren’t used.
 * I had to work in pixels for designing the game room. Since p5 works in pixels, I could not resize the canvas when the window width or height is changed otherwise the p5 dimensions would get all mixed up. So I decided to make the p5 game window a fixed dimension of `(1024, 700)` and fixed the canvas along with all other elements in the game room so that they would not move in case the window was resized. The game was meant to be a desktop application anyway with a fixed game screen window.
@@ -138,13 +140,13 @@ I had a lot of fun ideas while I was in the development stage of my game, and I 
 * Could also add a parallax background to the game, so that whenever the player’s character moved, the background would move along with them as well. This would only happen for the player’s own character on their respective screens, instead of both characters on the same screen.
 * I believe it would be helpful if I added a small time break when both players join the game and then start the game so that they have some time to get ready as the game starts.
 * Add the ability to “spectate” a particular game in a room.
-* For more ideas on how I plan to make the game into more of an open world experience, and the new features the application would have in that case, please refer to the [Inspiration](#Inspiration) section of the documentation.
+* For more ideas on how I plan to make the game into more of an open world experience, and the new features the application would have in that case, please refer to the [Inspiration](#Inspiration) section of the documentation.<br/><br/>
 
 <p align="center">
   <img 
     width="100"
     height="100"
-    src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/big-feather1.png"
+    src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/enemy-big.png"
   >
 </p>
 

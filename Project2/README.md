@@ -17,8 +17,8 @@ All of these ideas seemed very good, but given the time constraints that I had f
 
 <p align="center">
   <img 
-    width="300"
-    height="300"
+    width="200"
+    height="200"
     src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/Faiza.gif"
   >
 </p>

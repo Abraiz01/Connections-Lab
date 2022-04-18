@@ -81,7 +81,16 @@ The following are some of the challenges that I faced while making the game. Bug
 * When a user tried to join a full room, he wasn’t added to the room count but his name was added to the users list. - I solved this by deleting the user from the list when max players were reached.
 * The refresh and back buttons caused some bugs in the game, so I decided to implement my own buttons “Quit” and “Play Again” in order to avoid those bugs. The application could later be developed into a non-browser one so that back and refresh aren’t used.
 * I had to work in pixels for designing the game room. Since p5 works in pixels, I could not resize the canvas when the window width or height is changed otherwise the p5 dimensions would get all mixed up. So I decided to make the p5 game window a fixed dimension of `(1024, 700)` and fixed the canvas along with all other elements in the game room so that they would not move in case the window was resized. The game was meant to be a desktop application anyway with a fixed game screen window.
+```js
+  let canvas = createCanvas(1024, 700);
+  canvas.position(50, 30, 'fixed');
+```
 * P5 makes it a bit difficult to load images inside classes, so I had to `preload()` images into variables outside the classes and feed them into the attributes of the respective objects in order to load them. 
+```js
+function preload() {
+  playerImg = loadImage('/images/faiza.png');
+}
+```
 * Implementing two players was probably the trickiest part for me, since I decided to make one Player class and implement both players from it. I made two separate objects for both players from the `Player` class: `player` and `player2`. `player` was always used to represent the current player controlling their own character on their screen while `player2` was used to replicate the movements of the other player. The way this worked was that whenever `player` emitted something to the other player in the room, like their position, lives, feathers collected etc, the other player on their end mapped that information to the `player2` object. However, using a single `Player` class in this way to implement both players made everything much simpler and smoother at the end since I did not have to worry about making a separate `Player2` class and updating its object separately everytime.
 
 ## Next Steps / More Ideas:

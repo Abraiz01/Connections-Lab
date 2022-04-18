@@ -68,7 +68,7 @@ User testing can never be underestimated! I got a lot of valuable feedback from 
 * Another peer suggested that I have a set of instructions displayed at the beginning in order to make the user more familiar with the rules of the game since they were not obvious. So I decided to add simple instructions to the homepage of my website before the user joined the game room.
 * One peer suggested that the speed of the player’s character was slow compared to the enemies, so this made the game more difficult than it had to be. So, I decided to increase the speed and test the game further until I was satisfied with the movement of the character in relation to the enemy so that it was neither too hard nor too difficult to avoid the enemies. I could also later add a “difficulty” setting where the user could select the game difficulty and the speeds of the characters would be adjusted accordingly.
 
-Key Challenges / Things I Learnt:
+## Key Challenges / Things I Learnt:
 
 The following are some of the challenges that I faced while making the game. Bugs were very frequent, and it seemed that a new one always appeared right after one was fixed. Nevertheless, however frustrating this phase was, I learnt quite a lot and I am glad it all worked out to a great extent at the end.
 

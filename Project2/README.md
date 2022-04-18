@@ -9,8 +9,8 @@ Glitch link: https://quaint-delirious-mockingbird.glitch.me
 
 <p align="center">
   <img 
-    width="300"
-    height="200"
+    width="600"
+    height="400"
     src="https://github.com/Abraiz01/Connections-Lab/blob/main/Project2/public/images/screenshot.png"
   >
 </p>

@@ -1,4 +1,4 @@
-# Connections-Project2
+# Project2 - Connections Lab
 Project-2 using Node, Express, and socket.io
 
 Glitch link: https://quaint-delirious-mockingbird.glitch.me

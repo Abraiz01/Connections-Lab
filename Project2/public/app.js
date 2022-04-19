@@ -38,7 +38,7 @@ socket.on('playerTwoName', (data) => {
 
 // checking if player2 has left the game room
 socket.on('playerLeft',() => {
-    clientCount--;
+    // clientCount--;
     game.playerLeft = true;
 })
 
@@ -112,6 +112,8 @@ function preload() {
   bgImg = loadImage('/images/background1.png');
   featherImg = loadImage('/images/feather.png');
   feather2Img = loadImage('/images/feather2.png');
+
+  minecraftFont = loadFont('/fonts/minecraft-regular.otf'); // preloading the minecraft font
 }
 
 // Creating a Creature class which stores all the basic attributes, including the creature's position, radius, initial x and y velocities, and image attributes. 
@@ -606,7 +608,7 @@ class Game {
     display() {
         this.update();
 
-
+        // displaying players, enemies, and feathers if both players are ready and the game is not over
         if (this.ready == true && this.gameOver == false) {
             this.player.display();
             this.player2.display();
@@ -620,54 +622,80 @@ class Game {
             }
         }
 
+        // checking if the game is over and displaying the 'game over' screen on the canvas
         if (this.gameOver) {
             image(over_bg, 0, 0)
             textSize(150);
+            textFont(minecraftFont);
             fill(255, 0, 0);
-            text("GAME", 270, 220);
-            text("OVER", 290,350);
+            text("GAME", 300, 220);
+            text("OVER", 300,350);
             textSize(75);
-            text(this.player.winner, 370, 550);
+            text(this.player.winner, 330, 550);
+            // displaying the 'Play Again' button
             restartButton.style.display = "inline";
 
+            // displaying message to the current player if he is ready to play again but the other player isn't
             if (this.player.restart == true && this.player2.restart == false) {
                 textSize(15);
+                textFont(minecraftFont);
                 fill(0, 255, 0);
-                text("Waiting for other player to restart...", 400, 600);
+                text("Waiting for other player to restart...", 360, 600);
             }
 
+            // displaying message to the current player if the other player is ready to play again
             if (this.player.restart == false && this.player2.restart == true) {
                 textSize(15);
+                textFont(minecraftFont);
                 fill(0, 255, 0);
-                text("Player 2 is ready, click Play Again for another game!", 355, 600);
+                text("Player 2 is ready, click Play Again for another game!", 315, 600);
             }
         }
 
+        // informing the current player if the other player has left the game
         if (this.playerLeft) {
             textSize(15);
+            textFont(minecraftFont);
             fill(162, 67, 206);
-            text("Player 2 has left the game", 450, 650);
+            text("Player 2 has left the game", 400, 650);
+        }
+
+        // letting the player know that they are waiting for another player to join before the game starts
+        // when there is only one player inside the room
+        if (clientCount == 1 && this.gameOver == false) {
+            textSize(30);
+            textFont(minecraftFont);
+            fill(199, 202, 9);
+            text("Waiting for Player2 to join...", 50, 100);
         }
     }
 
+    // function to remove a particular value from an array. Adopted from GeeksForGeeks
+    // used to remove all feathers from the feathers array 
     arrayRemove(arr, value) {
         return arr.filter(function(geeks){
             return geeks != value;
         });
     }
 
+    // funtion to generate a random integer between two numbers
     randomInt(min, max) { // min and max included 
         return Math.floor(Math.random() * (max - min + 1) + min)
     }
 }
 
+// creating a game object
 game = new Game();
+
 
 function setup() {
 
+    // creating a canvas variable to store the p5 canvas and positioning its top left corner on the screen
     let canvas = createCanvas(1024, 700);
     canvas.position(50, 30, 'fixed');
 
+    // player2 and enemy2 position data received from the server is used here to make the 
+    // brown bird (player2) and enemy2 move
     socket.on('playerTwoServer', (data) => {
         game.player2.key_handler.left = data.key_handler.left;
         game.player2.key_handler.right = data.key_handler.right;
@@ -681,11 +709,14 @@ function setup() {
 
     })
 
-    // 
+    // listening to data from the server indicating that a new feather for player2 has been generated and 
+    // the brown feather is displayed on the screen accordingly
     socket.on('featherServer', (data) => {
+        // emptying the feathers array so that the brown feather(s) are cleared from the screen
         for (let j=0; j<game.featherList2.length; j++) {
             game.featherList2 = game.arrayRemove(game.featherList2, game.featherList2[j]);
         }
+        // generating a new feather object at a random position and pushing it to the array
         feather2 = new Feather(data.x, data.y, 20, 40, 40, 1, true);
         game.featherList2.push(feather2);
     })

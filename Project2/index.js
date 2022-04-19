@@ -114,3 +114,7 @@ io.sockets.on('connect', (socket) => {
     })
 
 })
+
+server.listen(9000, () => {
+  console.log("server is up and running")
+})

@@ -1,5 +1,5 @@
-# Project2 - Connections Lab
-Project-2 using Node, Express, and socket.io
+# Project #2 - Connections Lab
+Project #2 using Node, Express, and socket.io
 
 [Chase](https://quaint-delirious-mockingbird.glitch.me)
 

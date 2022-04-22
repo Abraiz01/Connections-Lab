@@ -7,6 +7,14 @@ For this weekly assignment, where we had to make use of a comlpetely new library
 
 Since it was my first time toying with three.js, I decided to work from the basics and really understand how everything was working instead of just copying examples and tweaking them. So, I decided to create my very own planet and tinker with its rotation using mouse movements. The idea was simple, but it allowed me to have a good grasp of the fundamentals of the library.
 
+<p align="center">
+  <img 
+    width="450"
+    height="300"
+    src="https://github.com/Abraiz01/Connections-Lab/blob/main/Week11/screenshot.png"
+  >
+</p>
+
 ## Working Process:
 
 The following is a breakdown of the steps I followed from scratch to the eventual development of the webpage:

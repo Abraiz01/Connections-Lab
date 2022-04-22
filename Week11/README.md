@@ -1,3 +1,6 @@
+# Connections-Week11
+Homework for Week#11 using the three.js Javascript library.
+
 Inspiration:
 
 For this weekly assignment, where we had to make use of a comlp[etely new library which we were not familiar with, I decided to go with three.js. The reason I went with this library was that I was just amazed by the seemingly limitless and diverse possibilities it has to offer. I was also very intrigued by the examples shown on the three.js website. Although I soon realized that three.js works on a very low-level in the sense that it is not very beginner-friendly, it only makes sense for such a diverse library to be structured this way.

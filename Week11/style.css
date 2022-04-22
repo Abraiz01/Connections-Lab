@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'space';
+    src: url('/fonts/SpaceQuest-yOY3.ttf');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background: rgb(11, 11, 11);
+    /* background-color: #a4400e */
+}
+
+.heading
+{
+    font-family: 'space';
+    font-size: 5vw;
+    position: absolute;
+    color: aliceblue;
+    top: 15vh;
+    left: 38vw;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}

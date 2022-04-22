@@ -10,8 +10,8 @@ Since it was my first time toying with three.js, I decided to work from the basi
 
 <p align="center">
   <img 
-    width="450"
-    height="300"
+    width="562"
+    height="484"
     src="https://github.com/Abraiz01/Connections-Lab/blob/main/Week11/screenshot.png"
   >
 </p>

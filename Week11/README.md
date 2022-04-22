@@ -5,7 +5,7 @@ Homework for Week#11 using the three.js Javascript library.
 
 For this weekly assignment, where we had to make use of a comlpetely new library which we were not familiar with, I decided to go with [three.js](https://threejs.org/). The reason I went with this library was that I was just amazed by the seemingly limitless and diverse possibilities it has to offer. I was also very intrigued by the examples shown on the three.js website. Although I soon realized that three.js works on a very low-level in the sense that it is not very beginner-friendly, it only makes sense for such a diverse library to be structured this way.
 
-Since it was my first time toying with three.js, I decided to work from the basics and really understand how everything was working instead of just copying examples and tweaking them. So, I decided to create my very own planet and tinker with its rotation using mouse movements. The idea was simple, but it allowed me to have a good grasp of the fundamentals of the library.
+Since it was my first time toying with three.js, I decided to work from the basics and really understand how everything was working instead of just copying examples and tweaking them. So, I decided to create my very own planet and tinker with its rotation using mouse movements. The idea was simple, but it allowed me to have a good grasp of the fundamentals of the library. <br/><br/>
 
 <p align="center">
   <img 

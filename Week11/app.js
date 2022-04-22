@@ -9,7 +9,7 @@ document.body.appendChild( renderer.domElement );
 
 // Loader
 const textureLoader = new THREE.TextureLoader();
-const normalTexture = textureLoader.load('/NormalMap.png')
+const normalTexture = textureLoader.load('/photos/NormalMap.png')
 
 // Ring
 const geometry = new THREE.RingGeometry( 1.5, 1, 200, 10 );

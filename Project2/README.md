@@ -101,7 +101,7 @@ The following are some of the challenges that I faced while making the game. Bug
        socket.emit('featherPosition', newFeather.featherPosition);
    }
 ```
-* When a user tried to join a full room, he wasn’t added to the room count but his name was added to the users list. I solved this by deleting the user from the list when max players were reached.
+* When a user tried to join a full room, they weren’t added to the room count but their name was added to the users list. I solved this by deleting the user from the list when max players were reached.
 * Used the Piskel app to make a bunch of illustrations (all of which are contained inside the 'images' subfolder in the 'public' folder). It did take a bit of time but I got exactly what I wanted in the right dimensions as well. For instance, I made two separate pattern designs for the homepage and game page backgrounds respectively (see below), and added them as background images using CSS which automatically repeats the background image once it is fully displayed.<br/><br/>
 
 

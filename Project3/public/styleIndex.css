@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    background-color: rgb(88,59,85);
+    color:white;
+}
+.wrapper{
+    display:flex;
+}
+.login-container{
+    margin:20px;
+    margin-top:20%;
+}
+.image-banner{
+    margin:20px;
+    margin-top:3%;
+}
+.webgl{
+    margin-left:1%;
+    margin-top:1%;
+}
+.buttons{
+    display:flex;
+    justify-content: space-evenly;
+}
+.input-file {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+label{
+    background-color:chartreuse;
+}
+img{
+    justify-content: center;
+}
+.container{
+    display: flex;
+}
+.container__message__text{
+    margin: 50px;
+}
+.input{
+    border: none;
+    padding: 1.5vh 1.5vw;
+    font-family: 'minecraft-regular';
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    cursor: default;
+    background-color: transparent;
+    border: 0.25vw solid beige;
+    border-radius: 1.5vw;
+}
+#username:focus{
+    background-color: beige;
+    color: black;
+}
+#username{
+    /* width: 10vw;
+    top: 1vh; */
+    color: beige;
+    /* position: absolute;
+    font-size: 1.5vw; */
+}
+#username:hover{
+    background-color: beige;
+    color: black;
+    cursor: auto;
+}
+
+
+#password:focus{
+    background-color: beige;
+    color: black;
+}
+#password{
+    /* width: 10vw;
+    top: 1vh; */
+    color: beige;
+    /* position: absolute;
+    font-size: 1.5vw; */
+}
+#password:hover{
+    background-color: beige;
+    color: black;
+    cursor: auto;
+}
+.button {
+    border: none;
+    color: beige;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.25vw solid beige;
+    border-radius: 1.5vw;
+    position: absolute;
+    top: 55vh;
+    left: 10vw;
+}
+#join-button:hover{
+    background-color: beige;
+    color: black;
+}
+#join-button{
+    font-size: 1.5vw;
+    /* font-family: 'minecraft-regular'; */
+    text-align: center;
+    width: 10vw;
+    height: 6vh;
+}
+

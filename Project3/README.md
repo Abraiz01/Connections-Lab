@@ -3,7 +3,6 @@
 Project #3 using Node, Express, and NeDB <br/>
 [Memory Cube](https://clumsy-legend-hedge.glitch.me) <br/>
 For a kitten-like experience 🐈 : username: admin, password: admin <br/>
-(Scroll to zoom in and out of the Cube to view the full picture)
 
 ## Description:
 

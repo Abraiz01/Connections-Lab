@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MemoryCube</title>
-    <link href="styleIndex.css" rel="stylesheet"/>
-</head>
-<body>
-    <div class="image-container">
-        <img id="bg-img" src="./background.png"/>
-    </div>
-    <div class="login-container">
-        <form class="sub-container" id="join-form">
-        <input class="input" type="text" id="username" placeholder="userame" required/>
-        <input class="input" type="password" id="password" placeholder="password" required/>
-        <button class="button" id="join-button">login</button>
-        </form>
-    </div>
+	<head>
+		<title>Memory Cube</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<style>
+			body {
+				background-color: #f0f0f0;
+				color: #444;
+			}
+			a {
+				color: #08f;
+			}
+		</style>
+	</head>
+	<body>
 
-    <!-- Import maps polyfill -->
-    <!-- Remove this when import maps will be widely supported -->
-    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+		<div id="controls">		
+			<input class="input-file" id="input-file" type="file" accept="image/png, image/jpg" style="display:none;"></input>
+			<input type="button" value="ADD MEMORY" class="trigger-button" id="trigger" onclick="document.getElementById('input-file').click();"></button>
+			<p id="myheader">User's Memory Cube</p>
+			<button class="logout-button" id="logOut">LogOut</button>
+		</div>
 
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "../build/three.module.js"
-            }
-        }
-    </script>
+		<div id="info">
+			<button id="close-button">X</button>
+			<img id="info-image">
+			<p id="description">Description comes here</p>
+		</div>
 
-    <script type="module" src="landing.js"></script>
-</body>
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js"
+				}
+			}
+		</script>
+
+        <script type="module" src="appclean.js"></script>
+
+	</body>
 </html>

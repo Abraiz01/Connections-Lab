@@ -1,7 +1,7 @@
 # Project #3 - Connections Lab
 ### Abraiz and Dixit <br/>
 Project #3 using Node, Express, and NeDB <br/>
-[Memory Cube](https://materialistic-pickle-trillium.glitch.me/) <br/>
+[Memory Cube](https://materialistic-pickle-trillium.glitch.me) <br/>
 For a kitten-like experience 🐈 : username: admin, password: admin <br/>
 (Scroll to zoom in and out of the Cube to view the full picture)
 

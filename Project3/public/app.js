@@ -10,18 +10,24 @@ import { OrbitControls } from 'https://unpkg.com/three@0.121.1/examples/jsm/cont
 let container, stats;
 let camera, raycaster, renderer;
 let INTERSECTED;
-let correctUser=false;
+let correctUser = false;
 let currentIndex;
 const geometry = new THREE.OctahedronGeometry( 20, 0 );
 const pointer = new THREE.Vector2();
 const scene = new THREE.Scene();
 
+
 // event listener and other front-end variables 
-let description=document.getElementById("description");
-let logout=document.getElementById("logOut");
+let description = document.getElementById("description");
+let logout = document.getElementById("logOut");
 let title = document.getElementById('myheader');
-let audio= new Audio("./sound.mp3");
-let volume = document.querySelector("#volume-control");
+let audio = new Audio("./sound.mp3");
+let mute = document.getElementById('mute-button')
+
+
+// looping over the background audio file
+audio.play();
+audio.loop = true;
 
 
 let meshlist = []; // stores mesh objects both loaded from the database and the new ones that are added
@@ -46,8 +52,26 @@ let userInfoJSON=JSON.stringify(userInfo);
 
 window.addEventListener('load', function() {
 
+
     // updating the title of the main page with the user's name
     title.innerHTML = userInfo.name + "'s Memory Cube"
+
+    // styling the mute button
+    mute.src = "images/sound.png"
+
+    // checking if mute is toggled and pausing / playing sound accordingly
+    mute.addEventListener("click", function( event ) {
+        
+        if (mute.src.includes("sound.png")) {
+            event.target.src = "images/muted.png";
+            audio.pause();
+        }
+        else if (mute.src.includes("muted.png")) {
+            event.target.src = "images/sound.png";
+            audio.play();
+            audio.loop = true;
+        }   
+    });
 
     // logout listener
     logout.addEventListener('click', () => {
@@ -93,7 +117,7 @@ window.addEventListener('load', function() {
     }
 
     // function to fill in meshlist with previously retrieved meshes from database
-    function reconstructMeshes(data){
+    function reconstructMeshes(data) {
 
         for ( let i = 0; i < data.docs.length; i ++ ) {
 
@@ -142,9 +166,6 @@ animate();
 
 function init() {
 
-    // looping over the background audio file
-    audio.play();
-    audio.loop=true;
 
     // setting up a perspective camera
     camera = new THREE.PerspectiveCamera( 27, window.innerWidth / window.innerHeight, 1, 3500 );

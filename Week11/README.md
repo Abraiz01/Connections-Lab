@@ -1,6 +1,6 @@
 # Connections-Week11
 Homework for Week#11 using the three.js Javascript library. <br/>
-[Rotation](https://abraiz01.github.io/)
+[Rotation](https://abraiz01.github.io/tree/main/ConnectionsLab)
 
 ## Inspiration:
 
